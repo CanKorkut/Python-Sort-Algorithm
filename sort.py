@@ -66,8 +66,6 @@ def run_sort_alg(array):
    x=sort_algorithm();
    #x.insertion_sort(array)
    x.merge_sort(array,0,len(array)-1)
-   print(x.counter_merge)
-   #print(x.counter_insertion)
    print (array)
 
    
