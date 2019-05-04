@@ -1,8 +1,10 @@
 from random import randint
+
 A = []
 B = []
 C = []
 D = []
+
 sirali_dizi = [0,1,2,3,4,5,6,7,8,9]
 ters_sirali_dizi = [9,8,7,6,5,4,3,2,1,0]
 
@@ -10,6 +12,7 @@ def random_array_generator(Array,x):
    while x>0:
       Array.append(randint(0,10000))
       x=x-1
+      
 random_array_generator(A,10)
 random_array_generator(B,100)
 random_array_generator(C,1000)
@@ -53,6 +56,7 @@ class sort_algorithm:
       Array[s] = t
       self.counter_quick=self.counter_quick+1
       return i+1
+   
 def run_quick_algorithm(Array):
     print (Array)
     x = sort_algorithm()
@@ -62,6 +66,7 @@ def run_quick_algorithm(Array):
 
 def main():
     run_quick_algorithm(B)
-
-main()
+      
+if __name__==__main__:
+     main()
       
